@@ -2,10 +2,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Card {
-	
+	//Create the value variable that will be used to calculate the winner of a round
 	private int value;
 	private StringBuilder name = new StringBuilder();
+	//Variable used to describe the card
 	private String suit;
+	//Creates a HashMap so the value of the card can be converted to the spelled out version of the number
 	private Map<Integer, String> valueName = new HashMap<Integer, String>();
 	
 	public Card(int value, String suit) {

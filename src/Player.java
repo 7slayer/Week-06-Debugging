@@ -32,4 +32,14 @@ public class Player {
 	public void draw(Deck deckToDraw) {
 		hand.add(deckToDraw.draw());
 	}
+	
+	public Card flip() {
+		Card cardInHand = hand.get(0);
+		hand.remove(0);
+		return cardInHand;
+	}
+	
+	public void incrementScore() {
+		setScore(getScore() + 1);
+	}
 }
